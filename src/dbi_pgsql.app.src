@@ -1,0 +1,16 @@
+{application, dbi_pgsql, [
+    {description, "DataBase Interface for Erlang using PostgreSQL"},
+    {vsn, git},
+    {registered, []},
+    {applications, [
+        kernel,
+        stdlib,
+        epgsql
+    ]},
+    {env, []},
+    {maintainers, ["Manuel Rubio"]},
+    {licenses, ["LGPL 2.1"]},
+    {links, [
+        {"Github", "https://github.com/dbi-beam/dbi_pgsql"}
+    ]}
+]}.
