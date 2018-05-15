@@ -6,7 +6,7 @@ DBI for Erlang (PostgreSQL)
 [![License: LGPL 2.1](https://img.shields.io/badge/License-GNU%20Lesser%20General%20Public%20License%20v2.1-blue.svg)](https://raw.githubusercontent.com/dbi-beam/dbi_pgsql/master/COPYING)
 [![Hex](https://img.shields.io/hexpm/v/dbi_pgsql.svg)](https://hex.pm/packages/dbi_pgsql)
 
-Database Interface for Erlang and Elixir using SQLite. For further information check [DBI](https://github.com/dbi-beam/dbi).
+Database Interface for Erlang and Elixir using PostgreSQL. For further information check [DBI](https://github.com/dbi-beam/dbi).
 
 ### Install (rebar3)
 
@@ -14,7 +14,7 @@ To use it, with rebar, you only need to add the dependency to the rebar.config f
 
 ```erlang
 {deps, [
-    {dbi_pgsql, "0.1.0"}
+    {dbi_pgsql, "0.1.1"}
 ]}
 ```
 
@@ -23,7 +23,7 @@ To use it, with rebar, you only need to add the dependency to the rebar.config f
 To use it, with mix, you only need to add the dependency to the mix.exs file:
 
 ```elixir
-{:dbi_pgsql, "~> 0.1.0"}
+{:dbi_pgsql, "~> 0.1.1"}
 ```
 
 ### Configuration
