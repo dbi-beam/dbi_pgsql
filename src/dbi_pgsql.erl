@@ -12,7 +12,8 @@
     transaction/3,
     get_migrations/1,
     add_migration/3,
-    rem_migration/2
+    rem_migration/2,
+    update_seq/3
 ]).
 
 -include_lib("dbi/include/dbi.hrl").
@@ -125,3 +126,14 @@ rem_migration(Poolname, Code) ->
         {ok, _, _} -> ok;
         Error -> Error
     end.
+
+-spec update_seq(Poolname :: atom(), SeqId :: binary(),
+                 SeqNum :: pos_integer()) ->
+      ok | {error, Reason :: any()}.
+
+update_seq(Poolname, SeqId, SeqNum) ->
+    SeqIdBin = integer_to_binary(SeqNum),
+    SeqQuery = <<"ALTER SEQUENCE ", SeqId/binary, "_id_seq RESTART ",
+                 SeqIdBin/binary>>,
+    {ok, 0, []} = dbi:do_query(Poolname, SeqQuery),
+    ok.
