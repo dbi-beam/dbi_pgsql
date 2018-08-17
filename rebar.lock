@@ -1,13 +1,13 @@
 {"1.1.0",
 [{<<"cache">>,{pkg,<<"cache">>,<<"2.2.0">>},1},
- {<<"dbi">>,{pkg,<<"dbi">>,<<"1.1.0">>},0},
+ {<<"dbi">>,{pkg,<<"dbi">>,<<"1.1.5">>},0},
  {<<"epgsql">>,{pkg,<<"epgsql">>,<<"3.4.0">>},0},
  {<<"eql">>,{pkg,<<"eql">>,<<"0.1.2">>},1},
  {<<"poolboy">>,{pkg,<<"poolboy">>,<<"1.5.1">>},0}]}.
 [
 {pkg_hash,[
  {<<"cache">>, <<"3C11DBF4CD8FCD5787C95A5FB2A04038E3729CFCA0386016EEA8C953AB48A5AB">>},
- {<<"dbi">>, <<"94A4DDFD9F828FC1ECFE1FFD002E598A5C58B36E54F40DEBDF1284885CBD3488">>},
+ {<<"dbi">>, <<"47CEBD8BCFF48B93588517509BCAC576075350F30A5A2857AD904CC7CC8C51A0">>},
  {<<"epgsql">>, <<"39D473B83D74329A88F8FB1F99AD24C7A2329FD753957C488808CB7C0FC8164E">>},
  {<<"eql">>, <<"C95D7E9635A914A9C70983129F4D86DC5DA70877F39F01785C274DA35BE45AD4">>},
  {<<"poolboy">>, <<"6B46163901CFD0A1B43D692657ED9D7E599853B3B21B95AE5AE0A777CF9B6CA8">>}]}
